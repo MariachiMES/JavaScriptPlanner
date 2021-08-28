@@ -152,12 +152,80 @@ $(document).ready(function () {
   });
 
   //store the current time
-  var hourNow = moment().format("ha");
+  var hourNow = moment().format("H");
   console.log(hourNow);
 
-  if (hourNow < 9) {
-    $(nineAmEl).toggleClass("future", "past");
-    console.log("thisworks");
+  if (hourNow > 9) {
+    $(nineAmEl).removeClass("future");
+    $(nineAmEl).addClass("past");
+    if (hourNow === 9) {
+      $(nineAmEl).removeClass("future");
+      $(nineAmEl).addClass("present");
+    }
+    return;
+  }
+  if (hourNow > 10) {
+    $(tenAmEl).removeClass("future");
+    $(tenAmEl).addClass("past");
+    if (hourNow === 10) {
+      $(nineAmEl).removeClass("future");
+      $(nineAmEl).addClass("present");
+    }
+    return;
+  }
+  if (hourNow > 9) {
+    $(nineAmEl).removeClass("future");
+    $(nineAmEl).addClass("past");
+    if (hourNow == 9) {
+      $(nineAmEl).removeClass("future");
+      $(nineAmEl).addClass("present");
+    }
+    return;
+  }
+  if (hourNow > 9) {
+    $(nineAmEl).removeClass("future");
+    $(nineAmEl).addClass("past");
+    if (hourNow == 9) {
+      $(nineAmEl).removeClass("future");
+      $(nineAmEl).addClass("present");
+    }
+    return;
+  }
+  if (hourNow > 9) {
+    $(nineAmEl).removeClass("future");
+    $(nineAmEl).addClass("past");
+    if (hourNow == 9) {
+      $(nineAmEl).removeClass("future");
+      $(nineAmEl).addClass("present");
+    }
+    return;
+  }
+  if (hourNow > 9) {
+    $(nineAmEl).removeClass("future");
+    $(nineAmEl).addClass("past");
+    if (hourNow == 9) {
+      $(nineAmEl).removeClass("future");
+      $(nineAmEl).addClass("present");
+    }
+    return;
+  }
+  if (hourNow > 9) {
+    $(nineAmEl).removeClass("future");
+    $(nineAmEl).addClass("past");
+    if (hourNow == 9) {
+      $(nineAmEl).removeClass("future");
+      $(nineAmEl).addClass("present");
+    }
+    return;
+  }
+  if (hourNow > 9) {
+    $(nineAmEl).removeClass("future");
+    $(nineAmEl).addClass("past");
+    if (hourNow == 9) {
+      $(nineAmEl).removeClass("future");
+      $(nineAmEl).addClass("present");
+    }
+    return;
   }
 });
 
