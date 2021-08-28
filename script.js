@@ -21,26 +21,6 @@ $(document).ready(function () {
   var fivePmPlan = localStorage.getItem("fivePmPlan");
   var sixPmPlan = localStorage.getItem("sixPmPlan");
 
-  //create an array of the hours that are going to be used in the scheduler
-
-  var timesAvailable = [
-    "9AM",
-    "10AM",
-    "11AM",
-    "12PM",
-    "1PM",
-    "2PM",
-    "3PM",
-    "4PM",
-    "5PM",
-    "6PM",
-  ];
-  var startTime = 0;
-  timesAvailable.forEach(function (startTime) {
-    console.log(startTime);
-    startTime++;
-  });
-
   //create a timer to run every 1000 milliseonds and display the time every second
   setInterval(function () {
     //get the current day and time using moment.js
@@ -54,17 +34,6 @@ $(document).ready(function () {
   }, 1000);
   //gets a handle on the text in the first text box
   //make an array of the save button handles
-  var saveBtns = [
-    $("#save-btn1"),
-    $("#save-btn2"),
-    $("#save-btn3"),
-    $("#save-btn4"),
-    $("#save-btn5"),
-    $("#save-btn6"),
-    $("#save-btn7"),
-    $("#save-btn8"),
-    $("#save-btn9"),
-  ];
 
   $(nineAmEl).text(nineAmPlan);
   $(tenAmEl).text(tenAmPlan);
@@ -153,79 +122,69 @@ $(document).ready(function () {
 
   //store the current time
   var hourNow = moment().format("H");
-  console.log(hourNow);
 
   if (hourNow > 9) {
     $(nineAmEl).removeClass("future");
     $(nineAmEl).addClass("past");
-    if (hourNow === 9) {
-      $(nineAmEl).removeClass("future");
-      $(nineAmEl).addClass("present");
-    }
+  } else if (hourNow == 9) {
+    $(nineAmEl).removeClass("future");
+    $(nineAmEl).addClass("present");
   }
   if (hourNow > 10) {
     $(tenAmEl).removeClass("future");
     $(tenAmEl).addClass("past");
-    if (hourNow === 10) {
-      $(tenAmEl).removeClass("future");
-      $(tenAmEl).addClass("present");
-    }
+  } else if (hourNow == 10) {
+    $(tenAmEl).removeClass("future");
+    $(tenAmEl).addClass("present");
   }
   if (hourNow > 11) {
     $(elevenAmEl).removeClass("future");
     $(elevenAmEl).addClass("past");
-    if (hourNow === 11) {
-      $(elevenAmEl).removeClass("future");
-      $(elevenAmEl).addClass("present");
-    }
+  } else if (hourNow == 11) {
+    $(elevenAmEl).removeClass("future");
+    $(elevenAmEl).addClass("present");
   }
   if (hourNow > 12) {
     $(twelvePmEl).removeClass("future");
     $(twelvePmEl).addClass("past");
-    if (hourNow === 12) {
-      $(twelvePmEl).removeClass("future");
-      $(twelvePmEl).addClass("present");
-    }
+  } else if (hourNow == 12) {
+    $(twelvePmEl).removeClass("future");
+    $(twelvePmEl).addClass("present");
   }
   if (hourNow > 13) {
     $(onePmEl).removeClass("future");
     $(onePmEl).addClass("past");
-    if (hourNow == 13) {
-      $(onePmEl).removeClass("future");
-      $(onePmEl).addClass("present");
-    }
+  } else if (hourNow == 13) {
+    $(onePmEl).removeClass("future");
+    $(onePmEl).addClass("present");
   }
   if (hourNow > 14) {
     $(twoPmEl).removeClass("future");
     $(twoPmEl).addClass("past");
-    if (hourNow === 14) {
-      $(twoPmEl).removeClass("future");
-      $(twoPmEl).addClass("present");
-    }
+  } else if (hourNow == 14) {
+    $(twoPmEl).removeClass("future");
+    $(twoPmEl).addClass("present");
   }
   if (hourNow > 15) {
     $(threePmEl).removeClass("future");
     $(threePmEl).addClass("past");
-    if (hourNow === 15) {
-      $(threePmEl).removeClass("future");
-      $(threePmEl).addClass("present");
-    }
+  } else if (hourNow == 15) {
+    $(threePmEl).removeClass("future");
+    $(threePmEl).addClass("present");
   }
   if (hourNow > 16) {
     $(fourPmEl).removeClass("future");
     $(fourPmEl).addClass("past");
-    if (hourNow === 16) {
-      $(fourPmEl).removeClass("future");
-      $(fourPmEl).addClass("present");
-    }
+  } else if (hourNow == 9) {
+    $(fourPmEl).removeClass("future");
+    $(fourPmEl).addClass("present");
   }
   if (hourNow > 17) {
     $(fivePmEl).removeClass("future");
     $(fivePmEl).addClass("past");
-    if (hourNow === 17) {
-      $(fivePmEl).removeClass("future");
-      $(fivePmEl).addClass("present");
-    }
+  } else if (hourNow == 17) {
+    $(fivePmEl).removeClass("future");
+    $(fivePmEl).addClass("present");
   }
 });
 
@@ -241,3 +200,62 @@ $(document).ready(function () {
 //else if current time === timeblock time, then the time block is present
 
 // else is the future
+
+// if (hourNow > 10) {
+//   $(tenAmEl).removeClass("future");
+//   $(tenAmEl).addClass("past");
+// } else if (hourNow === 10) {
+//   $(tenAmEl).removeClass("future");
+//   $(tenAmEl).addClass("present");
+// }
+// if (hourNow > 11) {
+//   $(elevenAmEl).removeClass("future");
+//   $(elevenAmEl).addClass("past");
+// }
+// if (hourNow === 11) {
+//   $(elevenAmEl).removeClass("future");
+//   $(elevenAmEl).addClass("present");
+// }
+
+// if (hourNow > 12) {
+//   $(twelvePmEl).removeClass("future");
+//   $(twelvePmEl).addClass("past");
+// } else if (hourNow === 12) {
+//   $(twelvePmEl).removeClass("future");
+//   $(twelvePmEl).addClass("present");
+// }
+
+// if (hourNow > 13) {
+//   $(onePmEl).removeClass("future");
+//   $(onePmEl).addClass("past");
+// } else if (hourNow === 13);
+// $(onePmEl).removeClass("future");
+// $(onePmEl).addClass("present");
+
+// if (hourNow > 14) {
+//   $(twoPmEl).removeClass("future");
+//   $(twoPmEl).addClass("past");
+// } else if (hourNow === 14);
+// $(twoPmEl).removeClass("future");
+// $(twoPmEl).addClass("present");
+
+// if (hourNow > 15) {
+//   $(threePmEl).removeClass("future");
+//   $(threePmEl).addClass("past");
+// } else if (hourNow === 15) {
+//   $(threePmEl).removeClass("future");
+//   $(threePmEl).addClass("present");
+// }
+// if (hourNow > 16) {
+//   $(fourPmEl).removeClass("future");
+//   $(fourPmEl).addClass("past");
+// } else if (hourNow === 16) {
+//   $(fourPmEl).removeClass("future");
+//   $(fourPmEl).addClass("present");
+// }
+// if (hourNow > 17) {
+//   $(fivePmEl).removeClass("future");
+//   $(fivePmEl).addClass("past");
+// } else if (hourNow === 17) {
+//   $(fivePmEl).removeClass("future");
+//   $(fivePmEl).addClass("present");
