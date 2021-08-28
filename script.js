@@ -162,70 +162,70 @@ $(document).ready(function () {
       $(nineAmEl).removeClass("future");
       $(nineAmEl).addClass("present");
     }
-    return;
   }
   if (hourNow > 10) {
     $(tenAmEl).removeClass("future");
     $(tenAmEl).addClass("past");
     if (hourNow === 10) {
-      $(nineAmEl).removeClass("future");
-      $(nineAmEl).addClass("present");
+      $(tenAmEl).removeClass("future");
+      $(tenAmEl).addClass("present");
     }
-    return;
   }
-  if (hourNow > 9) {
-    $(nineAmEl).removeClass("future");
-    $(nineAmEl).addClass("past");
-    if (hourNow == 9) {
-      $(nineAmEl).removeClass("future");
-      $(nineAmEl).addClass("present");
+  if (hourNow > 11) {
+    $(elevenAmEl).removeClass("future");
+    $(elevenAmEl).addClass("past");
+    if (hourNow === 11) {
+      $(elevenAmEl).removeClass("future");
+      $(elevenAmEl).addClass("present");
     }
-    return;
   }
-  if (hourNow > 9) {
-    $(nineAmEl).removeClass("future");
-    $(nineAmEl).addClass("past");
-    if (hourNow == 9) {
-      $(nineAmEl).removeClass("future");
-      $(nineAmEl).addClass("present");
+  if (hourNow > 12) {
+    $(twelvePmEl).removeClass("future");
+    $(twelvePmEl).addClass("past");
+    if (hourNow === 12) {
+      $(twelvePmEl).removeClass("future");
+      $(twelvePmEl).addClass("present");
     }
-    return;
   }
-  if (hourNow > 9) {
-    $(nineAmEl).removeClass("future");
-    $(nineAmEl).addClass("past");
-    if (hourNow == 9) {
-      $(nineAmEl).removeClass("future");
-      $(nineAmEl).addClass("present");
+  if (hourNow > 13) {
+    $(onePmEl).removeClass("future");
+    $(onePmEl).addClass("past");
+    if (hourNow == 13) {
+      $(onePmEl).removeClass("future");
+      $(onePmEl).addClass("present");
     }
-    return;
   }
-  if (hourNow > 9) {
-    $(nineAmEl).removeClass("future");
-    $(nineAmEl).addClass("past");
-    if (hourNow == 9) {
-      $(nineAmEl).removeClass("future");
-      $(nineAmEl).addClass("present");
+  if (hourNow > 14) {
+    $(twoPmEl).removeClass("future");
+    $(twoPmEl).addClass("past");
+    if (hourNow === 14) {
+      $(twoPmEl).removeClass("future");
+      $(twoPmEl).addClass("present");
     }
-    return;
   }
-  if (hourNow > 9) {
-    $(nineAmEl).removeClass("future");
-    $(nineAmEl).addClass("past");
-    if (hourNow == 9) {
-      $(nineAmEl).removeClass("future");
-      $(nineAmEl).addClass("present");
+  if (hourNow > 15) {
+    $(threePmEl).removeClass("future");
+    $(threePmEl).addClass("past");
+    if (hourNow === 15) {
+      $(threePmEl).removeClass("future");
+      $(threePmEl).addClass("present");
     }
-    return;
   }
-  if (hourNow > 9) {
-    $(nineAmEl).removeClass("future");
-    $(nineAmEl).addClass("past");
-    if (hourNow == 9) {
-      $(nineAmEl).removeClass("future");
-      $(nineAmEl).addClass("present");
+  if (hourNow > 16) {
+    $(fourPmEl).removeClass("future");
+    $(fourPmEl).addClass("past");
+    if (hourNow === 16) {
+      $(fourPmEl).removeClass("future");
+      $(fourPmEl).addClass("present");
     }
-    return;
+  }
+  if (hourNow > 17) {
+    $(fivePmEl).removeClass("future");
+    $(fivePmEl).addClass("past");
+    if (hourNow === 17) {
+      $(fivePmEl).removeClass("future");
+      $(fivePmEl).addClass("present");
+    }
   }
 });
 
