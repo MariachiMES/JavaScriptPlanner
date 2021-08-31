@@ -175,7 +175,7 @@ $(document).ready(function () {
   if (hourNow > 16) {
     $(fourPmEl).removeClass("future");
     $(fourPmEl).addClass("past");
-  } else if (hourNow == 9) {
+  } else if (hourNow == 16) {
     $(fourPmEl).removeClass("future");
     $(fourPmEl).addClass("present");
   }
