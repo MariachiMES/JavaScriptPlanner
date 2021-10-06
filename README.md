@@ -1,3 +1,46 @@
-# JavaScriptPlanner
-a planner written in javascript 
-a planner written in javascript the intention is for this planner to use local storage to maintain the planner and color-code the planner based on time (moment.js)
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+
+  # JavaScript Day Planner
+  
+  
+  
+  # Description
+  
+  a day planner written using JavaScript, HTML and CSS
+  
+  ## Table of Contents
+
+*  [Installation](#installation)
+
+*  [Usage](#usage)
+
+*  [Tests](#tests)
+
+*  [Contributions](#contributions)
+
+*  [Features](#features)
+
+*  [Questions](#questions)
+
+
+## Installation
+  none
+## Usage
+  schedule on an hour by hour basis using local storage
+  
+## Credits
+  coded by David Ortiz
+## Tests
+  none
+
+## Contributions
+  none
+  
+## Features
+  uses moment.js, local storage, CSS, HTML, Javascript
+  
+## Questions
+
+## [DEPLOYED](https://mariachimes.github.io/JavaScriptPlanner/)
+
+  [GitHub](https://github.com/mariachiMES)
